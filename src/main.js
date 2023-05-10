@@ -1,14 +1,24 @@
+// Elabore um programa que leia um numero e devolva para o usuário o dobro do número informado.
 let numero = prompt("informe o numero")
-let questao01 = document.querySelector ("#questao1")
-questao01.innerHTML = `O resultado é: ${ numero * 2}`
+const convertenumero = parseInt(numero) 
+console.log(convertenumero * 2)
+alert(convertenumero * 2)
 
-let valorJantar = parseInt(prompt("Qual valor da conta ? "))
-const valorGarcom = valorJantar * 0.10
-let questao02 = document.querySelector("#questao02"); // Pega id da tag div de forma dinamica
-questao02.innerHTML = `O valor da Jantar é: ${valorJantar}`
+// Elabore um programa que calcule o valor do jantar, sendo o valor total do jantar composto 
+// pela conta junto com a taxa de atendimento do garçom.
+const contaJantar = prompt("escreva o valor da sua conta")
+const taxaGarcom = parseInt(contaJantar * 0.10)
+console.log(taxaGarcom)
+const valorTotal = parseInt(contaJantar) + taxaGarcom
+console.log(valorTotal)
+alert("O valor total do jantar é: R$ " + valorTotal.toFixed(2))
 
-let valorTotal = parseFloat(prompt("Qual valor total da conta ?"))
-const qtdClientes = parseInt(prompt("Quantos clientes que vão pagar a conta?"))
-const valorPorCliente = valorTotal/ qtdClientes
-let questao03 = document.querySelector("#questao03")
-questao03.innerHTML = `Cada cliente pagará R$ ${valorPorCliente.toFixed(2)}`
+//Elabore um programa para uma pizzaria, o qual leia o valor total de uma conta
+//e quantos clientes vão pagá-la. Calcule e informe o valor a ser pago por cliente
+let valorConta = prompt("Qual o valor da conta?")
+console.log(valorConta)
+let qtdClientes = prompt("quantos clientes vão pagar a conta?")
+console.log(qtdClientes)
+const valorPorCliente = valorConta/ qtdClientes
+console.log(valorPorCliente)
+alert("Cada cliente deve pagar R$ " + valorPorCliente.toFixed(2))
