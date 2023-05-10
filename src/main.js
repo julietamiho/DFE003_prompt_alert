@@ -1,7 +1,7 @@
 // Elabore um programa que leia um numero e devolva para o usuário o dobro do número informado.
 let numero = prompt("informe o numero")
-const convertenumero = parseInt(numero) 
-console.log(convertenumero * 2)
+const converteNumero = parseInt(numero) 
+console.log(converteNumero * 2)
 alert(convertenumero * 2)
 
 // Elabore um programa que calcule o valor do jantar, sendo o valor total do jantar composto 
